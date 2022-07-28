@@ -34,3 +34,9 @@ HAVING round(AVG(length),2)>120;
 SELECT title, length FROM film
 WHERE length IS NOT NULL OR length<> 0
 ORDER BY length DESC;
+
+-- correction required:
+-- SELECT title, length FROM film
+-- WHERE length IS NOT NULL OR length<> 0
+-- RANK() OVER (ORDER BY length) as 'RANK',
+-- DENSE_RANK() OVER (order BY length) as 'DENSRANK';
