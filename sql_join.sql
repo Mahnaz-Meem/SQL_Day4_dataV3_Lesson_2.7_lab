@@ -10,6 +10,7 @@ SELECT * from staff;
 SELECT * from actor;
 SELECT * from payment;
 SELECT * from customer;
+SELECT * from rental;
 
 SELECT c.category_id,
 c.name AS "Category Name",
